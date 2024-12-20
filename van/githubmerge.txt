@@ -1,0 +1,33 @@
+#To create new branch on git/github through cli
+git checkout -b <branch_name>
+for ex:- git checkout -b Vanshit
+
+#Switch to branch 
+git checkout <branchname>
+#for example :- git checkout panda
+
+#Create folder test and file demo.txt in panda branch
+mkdir test 
+cd test 
+touch demo.txt
+
+# ADD commit and push folder to github 
+git add test 
+git commit -m "Test and demo file"
+git push origin panda
+# Now your panda branch will be visible in git hub 
+
+# Switch to main branch
+git checkout main 
+
+# Merge the panda branch into main
+git merge panda 
+
+#Push the updated main branch to GitHub
+git push origin main 
+
+
+# After this your panda branch data will be visible to main branch
+
+
+
